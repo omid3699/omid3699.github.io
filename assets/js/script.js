@@ -1,5 +1,5 @@
 var typed = new Typed('#typing', {
-    strings: ["Hello Wellcome to mi Website", 'I am Omid Azadi a funny Developer from Afghanistan', 'a linux lower', 'currently learning golang and bloakchain', 'I Love Taekwondo and Kung Fu', 'سینه خواهم شرحه شرحه از فراق تا بگویم شرح درد اشتیاق'],
+    strings: ["Hello Wellcome to mi Website", 'I am Omid Azadi a funny Developer from Afghanistan', 'a linux lover', 'currently learning golang and bloakchain', 'I Love Taekwondo and Kung Fu', 'سینه خواهم شرحه شرحه از فراق تا بگویم شرح درد اشتیاق'],
     typeSpeed: 70,
     backSpeed: 70,
     startDelay: 500,
