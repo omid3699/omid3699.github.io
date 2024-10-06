@@ -2,233 +2,408 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Omid Azadi, portfolio of omid">
-    <link rel="icon" href="https://fav.farm/🫣" />
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link rel="icon" href="https://fav.farm/🫣" />
+  <title>Omid Azadi</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
-    <title>Omid`s Stuff</title>
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
 </head>
 
-<body class="bg-[#111] px-4">
+<body class="index-page">
 
+  <header id="header" class="header d-flex flex-column justify-content-center">
 
-    <nav
-        class="max-w-screen-xl bg-[#111] sticky top-0 mx-auto flex justify-between items-center h-14 px-4 border-b border-zinc-800">
-        <div class="flex justify-center items-center space-x-2">
-            <span class="text-xl text-gray-100 font-bold">Omid`s Stuff</span>
-        </div>
+    <i class="header-toggle d-xl-none bi bi-list"></i>
 
-        <div class="hidden sm:flex justify-center items-center">
-            <ul class="flex space-x-4 text-white font-medium">
-                <li><a href="#Home" class="hover:text-blue-600 transition">Home</a></li>
-                <li><a href="#About" class="hover:text-blue-600 transition">About</a></li>
-                <li><a href="#Stack" class="hover:text-blue-600 transition">Stack</a></li>
-              
-            </ul>
-        </div>
-
-
-        <div class="sm:hidden">
-            <div id="menu-button">
-                <button class="text-gray-100 transition hover:bg-zinc-800 p-1 rounded-full">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                        class="bi bi-list" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-                    </svg>
-                </button>
-            </div>
-
-            <div id="menu" style="display: none;"
-                class="mx-auto z-20 w-full px-2 py-2 sm:hidden bg-[#111] fixed top-14 right-0 left-0 shadow-lg">
-                <ul class="space-y-4 text-white font-medium">
-                    <li><a href="#Home" class="block rounded px-2 py-2 hover:bg-gray-100 hover:text-black transition">Home</a></li>
-                    <li><a href="#About" class="block rounded px-2 py-2 hover:bg-gray-100 hover:text-black transition">About</a></li>
-                    <li><a href="#Stack" class="block rounded px-2 py-2 hover:bg-gray-100 hover:text-black transition">Stack</a></li>
-
-                </ul>
-            </div>
-        </div>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+      </ul>
     </nav>
 
+  </header>
 
-    <section id="Home" class="max-w-screen-xl flex justify-center items-center flex-col mx-auto h-screen">
-        <div>
-            <h1 id="typing" class="text-gray-100 text-xl sm:text-3xl xl:text-5xl font-bold text-center"></h1>
+  <main class="main">
 
+    <!-- Hero Section -->
+    <section id="hero" class="hero section light-background">
 
-            <!-- <div class="flex justify-center items-center mt-8">
-                <a href="about.html">
-                    <button
-                        class="text-gray-100 px-8 py-2 rounded-full border border-zinc-700 transition hover:bg-gray-100 hover:text-black">
-                        About Me
-                    </button>
-                </a>
-            </div> -->
+      <img src="assets/img/hero-bg.jpg" alt="">
 
-        </div>
-    </section>
-
-
-
-    <section id="About" class="max-w-screen-xl flex justify-center items-center flex-col mx-auto p-4 h-screen">
-        <div class="flex flex-col sm:flex-row gap-4 p-8 xl:w-3/5">
-            <img src="./assets/img/avatar.png" class="rounded-lg  sm:w-52 sm:h-52" alt="Photo">
-
-            <p dir="auto" class="text-gray-100 text-right text-base">
-            Hello, I`m Omid :)
-            Python and Go programmer and founder of karyab job searching site
-
-            Welcome to My Website .
+      <div class="container" data-aos="zoom-out">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <h2>Hello I am <b class="text-secondary">Omid Azadi</b></h2>
+            <p>I'm <span class="typed"
+                data-typed-items="Web Developer,Python Developer, Go Developer, Linux Lover, Freelancer, Martial Artist, Your Good friend">Designer</span><span
+                class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+            <p>My Motto: <span class="motto-typed" class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
             </p>
-
-        </div>
-    </section>
-    <section id="Stack" class="max-w-screen-xl flex justify-center items-center mx-auto p-4 h-screen">
-        <div class="flex flex-col w-full px-2 sm:px-10 xl:px-16 justify-center">
-            <h2 class="text-gray-100 text-3xl sm:text-4xl font-medium mb-8">Tech Stack</h2>
-
-            <div class="w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-y-4 gap-x-6">
-
-                <div>
-                    <span class="inline-block font-medium text-gray-100 text-md mb-2">Linux</span>
-                    <div class="w-full bg-zinc-800 rounded-full h-4 mb-4">
-                        <div class="bg-blue-600 h-4 rounded-full" style="width: 50%;">
-                            <span class="px-2"></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <span class="inline-block font-medium text-gray-100 text-md mb-2">python</span>
-                    <div class="w-full bg-zinc-800 rounded-full h-4 mb-4">
-                        <div class="bg-blue-600 h-4 rounded-full" style="width: 55%;">
-                            <span class="px-2"></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <span class="inline-block font-medium text-gray-100 text-md mb-2">JS</span>
-                    <div class="w-full bg-zinc-800 rounded-full h-4 mb-4">
-                        <div class="bg-blue-600 h-4 rounded-full" style="width: 40%;">
-                            <span class="px-2"></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <span class="inline-block font-medium text-gray-100 text-md mb-2">GO</span>
-                    <div class="w-full bg-zinc-800 rounded-full h-4 mb-4">
-                        <div class="bg-blue-600 h-4 rounded-full" style="width: 35%;">
-                            <span class="px-2"></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <span class="inline-block font-medium text-gray-100 text-md mb-2">Docker</span>
-                    <div class="w-full bg-zinc-800 rounded-full h-4 mb-4">
-                        <div class="bg-blue-600 h-4 rounded-full" style="width: 30%;">
-                            <span class="px-2"></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <span class="inline-block font-medium text-gray-100 text-md mb-2">django</span>
-                    <div class="w-full bg-zinc-800 rounded-full h-4 mb-4">
-                        <div class="bg-blue-600 h-4 rounded-full" style="width: 70%;">
-                            <span class="px-2"></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <span class="inline-block font-medium text-gray-100 text-md mb-2">scrapy</span>
-                    <div class="w-full bg-zinc-800 rounded-full h-4 mb-4">
-                        <div class="bg-blue-600 h-4 rounded-full" style="width: 70%;">
-                            <span class="px-2"></span>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <span class="inline-block font-medium text-gray-100 text-md mb-2">selenium</span>
-                    <div class="w-full bg-zinc-800 rounded-full h-4 mb-4">
-                        <div class="bg-blue-600 h-4 rounded-full" style="width: 70%;">
-                            <span class="px-2"></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <span class="inline-block font-medium text-gray-100 text-md mb-2">vue</span>
-                    <div class="w-full bg-zinc-800 rounded-full h-4 mb-4">
-                        <div class="bg-blue-600 h-4 rounded-full" style="width: 20%;">
-                            <span class="px-2"></span>
-                        </div>
-                    </div>
-                </div>
+            <div class="social-links">
+              <!-- <a href="https://telegram.org/@omidVXV"><i class="bi bi-telegram"></i></a> -->
+              <a href="https://github.com/omid3699/omid3699"><i class="bi bi-github"></i></a>
+              <!-- <a href="#"><i class="bi bi-instagram"></i></a> -->
+              <!-- <a href="#"><i class="bi bi-linkedin"></i></a> -->
             </div>
 
+          </div>
         </div>
-        
-    </section>
-    <section class="max-w-screen-xl flex  items-center flex-col mx-auto h-screen">
-        <p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/878c0f1075a4cfdbbbeb89244a6c5c7a2aec7dbafa6f16d34d4651cc5f75ccb6/68747470733a2f2f6769746875622d726561646d652d73747265616b2d73746174732e6865726f6b756170702e636f6d2f3f757365723d6f6d69643336393926"><img  src="https://camo.githubusercontent.com/878c0f1075a4cfdbbbeb89244a6c5c7a2aec7dbafa6f16d34d4651cc5f75ccb6/68747470733a2f2f6769746875622d726561646d652d73747265616b2d73746174732e6865726f6b756170702e636f6d2f3f757365723d6f6d69643336393926" alt="omid3699" data-canonical-src="https://github-readme-streak-stats.herokuapp.com/?user=omid3699&amp;" style="max-width: 100%;"></a></p>
-    </section>
-    <footer class="max-w-screen-xl mx-auto bg-[#111] container p-4 sm:p-6 border-t border-zinc-800">
+      </div>
 
-        <div class="flex flex-col items-center justify-center sm:flex-row sm:justify-between">
-            <span class="text-sm text-gray-100 text-center"><script>document.write(new Date().getFullYear())</script> <a href="https://github.com/omid3699"
-                    class="underline">Omid Azadi</a>.
-                All Rights Reserved.</span>
+    </section><!-- /Hero Section -->
 
-            <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0 text-gray-100">
+    <!-- About Section -->
+    <section id="about" class="about section">
 
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
 
-                <a target="_blank" href="https://github.com/omid3699/omid3699.github.io" class="transition hover:scale-125">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
-                        class="bi bi-github" viewBox="0 0 16 16">
-                        <path
-                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                    </svg>
-                    <span class="sr-only">Source Code</span>
+      </div><!-- End Section Title -->
 
-                </a>
-                <!-- <a target="_blank" href="https://t.me/#" class="transition hover:scale-125">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
-                            class="bi bi-telegram" viewBox="0 0 16 16">
-                            <path
-                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
-                        </svg>
-                        <span class="sr-only">Telegram page</span>
-                    </a> -->
+      <div class="container" data-aos="fade-up" data-aos-delay="150">
 
-<!-- 
-                    <a target="_blank" href="https://www.youtube.com/@#" class="transition hover:scale-125">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                            class="bi bi-youtube" viewBox="0 0 16 16">
-                            <path
-                                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
-                        </svg>
-                        <span class="sr-only">Youtube page</span>
-                    </a> -->
-
-
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/profile.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Web Developer</h2>
+            <p>I am Omid Azadi a funny Developer from Afghanistan with 3 years of experience in developing
+              applications.</p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>22 April 2005</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+93 797 594 152</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Ghazni</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Country:</strong> <span>Afghanistan</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>19</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span><span
+                        class="text-warning fw-bold">Yellow</span> Belt</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span><a
+                        href="mailto:omedmm3@gmail.com">omedmm3@gmail.com</a></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
             </div>
+            <p class="py-3">
+              Experienced in Building Web Application with sevral languages / frameworks microservices and API`s and
+              webscrapping and automation systems.
+            </p>
+          </div>
         </div>
-    </footer>
 
-    <script src="./assets/js/script.js"></script>
-    <script type="module" src="https://esm.sh/emfed@1"></script>
-    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="omid369" data-description="Support me on Buy me a coffee!" data-message="donate me" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+      </div>
+
+    </section><!-- /About Section -->
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h1>Skills</h1>
+        <p>this is the list of my main skills.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-down" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>Python</span> <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Go</span> <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+
+
+
+            <div class="progress">
+              <span class="skill"><span>JavaScript</span> <i class="val">30%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Django</span> <i class="val">92%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>FastAPI</span> <i class="val">50%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+            <div class="progress">
+              <span class="skill"><span>Flask</span> <i class="val">65%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+            <div class="progress">
+              <span class="skill"><span>Scrapy, BS4</span> <i class="val">65%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+            <div class="progress">
+              <span class="skill"><span>Selenium</span> <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+            <div class="progress">
+              <span class="skill"><span>playwright</span> <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+          </div>
+
+          <div class="col-lg-6">
+            <div class="progress">
+              <span class="skill"><span>HTML</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>CSS</span> <i class="val">9%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="9" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+
+
+            <div class="progress">
+              <span class="skill"><span>Linux</span> <i class="val">55%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+            <div class="progress">
+              <span class="skill"><span>Git</span> <i class="val">50%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Docker</span> <i class="val">50%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+            <div class="progress">
+              <span class="skill"><span>Postgresql, My Sql</span> <i class="val">25%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+            <div class="progress">
+              <span class="skill"><span>MongoDB</span> <i class="val">30%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+            <div class="progress">
+              <span class="skill"><span>Redis</span> <i class="val">25%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div><!-- End Skills Item -->
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+      </div><!-- End Section Title -->
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title text-center">Sumary</h3>
+            <div class="resume-item pb-0">
+              <h4>Omid Azadi</h4>
+              <p><em>Innovative and deadline-driven Web Developer with 3+ years of experience developing
+                  Web Applications, and Web Services.</em></p>
+              <ul>
+                <li>Ghazni Afghanistan</li>
+                <li>+93 797 594 152</li>
+                <li>omedmm3@gmail.com</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+
+          </div>
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title text-center">Professional Experience</h3>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="resume-item">
+                  <h4>Senior Backend Developer</h4>
+                  <h5>2023 - Present</h5>
+                  <p><b class="text-primary"><a href="https://karyab.org/">karyab.org</a></b> <em>Ghazni Afghanistan</em>
+                  </p>
+                  <ul>
+                    <li>Developed a job searching website using Python Django,HTMX, microservices, PostgreSQL, and Redis,
+                      Docker, AWS</li>
+                    <li>Implemented complex features for the web project.</li>
+                    <li>Optimized site performance and scalability for increased user traffic.</li>
+                    <li>Implemented security measures to protect user data and privacy.</li>
+                    <li>Conducted testing and debugging to ensure functionality and performance.</li>
+                  </ul>
+                </div><!-- Edn Resume Item -->
+                <div class="resume-item">
+                  <h4>Backend Developer</h4>
+                  <h5>2023 - 2024</h5>
+                  <p><b class="text-primary">Nikpa Travel Agency </b><em>Ghazni Afghanistan</em></p>
+                  <ul>
+                    <li>Developed an online management system and CRM using Python Django</li>
+                    <li>Utilized Django Rest Framework for web application development</li>
+                    <li>Collaborated with team members on project execution</li>
+                    <li>Ensured data security and integrity within the system</li>
+                  </ul>
+                </div><!-- Edn Resume Item -->
+            </div>
+            <div class="col-lg-6">
+              <div class="resume-item">
+                <h4>Web Developer</h4>
+                <h5>2023 - 2024</h5>
+                <p><b class="text-primary">Ghazni University </b><em>Ghazni Afghanistan</em></p>
+                <ul>
+                  <li>Developed an online library for Ghazni University using Python, Django, HTMX</li>
+                  <li>Implemented Multi Level permision for for Users</li>
+                  <li>Implemented automatic thumbnail creation for PDF books</li>
+                </ul>
+              </div><!-- Edn Resume Item -->
+              <div class="resume-item">
+                <h4>Python Developer</h4>
+                <h5>2024</h5>
+                <p><b class="text-primary">Ammar Travel Agency </b><em>Ghazni Afghanistan</em></p>
+                <ul>
+                  <li>Developed an automation system using Python and Selenium to check passport application status
+                    automatically</li>
+                  <li>Extracted data from application form PDFs and stored it in an Excel file</li>
+                  <li>Implemented efficient data processing and storage techniques</li>
+                  <li>Conducted testing and debugging to ensure system functionality</li>
+                </ul>
+              </div><!-- Edn Resume Item -->
+            </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <h3 class="sitename">Omid Azadi</h3>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://github.com/omid3699/omid3699"><i class="bi bi-github"></i></a>
+        <!-- <a href=""><i class="bi bi-instagram"></i></a> -->
+        <!-- <a href="https://telegram.org/@omidVXV"><i class="bi bi-telegram"></i></a> -->
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="omid369" data-description="Support me on Buy me a coffee!" data-message="donate me" data-color="#5F7FFF" data-position="Left" data-x_margin="30" data-y_margin="30"></script>
+
 </body>
 
 </html>
